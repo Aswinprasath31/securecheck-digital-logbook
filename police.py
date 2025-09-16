@@ -9,7 +9,7 @@ def create_connection():
         connection = pymysql.connect(
             host='localhost',
             user='root',
-            password='Rose@143',
+            password='Rose143',
             database='securecheck',
             cursorclass=pymysql.cursors.DictCursor
         )
@@ -182,4 +182,5 @@ with st.form("new_log_form"):
         """)
 
         
+
 
