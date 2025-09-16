@@ -4,3 +4,4 @@ pymysql
 openpyxl
 streamlit
 altair
+plotly
