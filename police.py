@@ -7,11 +7,12 @@ import plotly.express as px
 def create_connection():
     try:
         connection = pymysql.connect(
-            host='localhost',
-            user='root',
-            password='Rose143',
-            database='securecheck',
-            cursorclass=pymysql.cursors.DictCursor
+           host = 'localhost',
+           port = '3306',
+           database = 'securecheck',
+           username = 'root',
+           password = 'Rose143',
+           cursorclass=pymysql.cursors.DictCursor
         )
         return connection
     except Exception as e:
@@ -182,5 +183,6 @@ with st.form("new_log_form"):
         """)
 
         
+
 
 
